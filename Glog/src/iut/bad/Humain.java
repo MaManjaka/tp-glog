@@ -21,6 +21,6 @@ public abstract class Humain implements Consommation {
 		System.out.println(nom + " " + prenom + "boit");
 	}
 	protected void ami(Humain h) {
-		System.out.println(nom + " " + prenom + "et"+ h.nom + " " + h.prenom + "sont ");
+		System.out.println(nom + " " + prenom + "et"+ h.nom + " " + h.prenom + "sont deux ami");
 	}
 }
