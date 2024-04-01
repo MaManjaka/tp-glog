@@ -20,10 +20,10 @@ public class MoneyTest {
 	Money result = m12CHF.add(m14CHF); // exécution de la méthode testée assertTrue(expected.equals(result)); // comparaison
 	assertTrue(expected.equals(result));// equals(mapitovy ny caractere ao anatiny tsy instance de mretourne faux string par defauts de rhf mitovy le caractere ao anatiny 
 	}
-	//@Test
-	//public void testEquals() {
-	//Money m12CHF= new Money(12, "CHF");
-	//Money m14CHF= new Money(14, "CHF");
-	//assertTrue(!m12CHF.equals(null)); assertEquals(m12CHF, m12CHF); assertEquals(m12CHF, new Money(12, "CHF")); assertTrue(!m12CHF.equals(m14CHF));
-	//}
+	@Test
+	public void testEquals() {
+	Money m12CHF= new Money(12, "CHF");
+	Money m14CHF= new Money(14, "CHF");
+	assertTrue(!m12CHF.equals(null)); assertEquals(m12CHF, m12CHF); assertEquals(m12CHF, new Money(12, "CHF")); assertTrue(!m12CHF.equals(m14CHF));
+	}
 }
