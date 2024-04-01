@@ -14,8 +14,6 @@ public class MoneyTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-
-	
 	
 	@Test
 	public void testSimpleAdd() {
