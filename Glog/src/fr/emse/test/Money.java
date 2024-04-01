@@ -14,4 +14,13 @@ public class Money {
 	public Money add(Money m) {
 	return new Money(amount() + m.amount(), currency());
 	}
+	@Override
+	public boolean equals(Object anObject) {
+		if(this == anObject) return true;
+		if(anObject instanceof Money) {
+			Money m = (Money) anObject;
+			return (amount() == m.amount() && currency().equals(m.currency()));	
+		}
+		return false;
+	}
 }
