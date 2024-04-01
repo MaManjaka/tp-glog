@@ -20,4 +20,7 @@ public abstract class Humain implements Consommation {
 	public void boire() {
 		System.out.println(nom + " " + prenom + "boit");
 	}
+	protected void ami(Humain h) {
+		System.out.println(nom + " " + prenom + "et"+ h.nom + " " + h.prenom + "sont ");
+	}
 }
