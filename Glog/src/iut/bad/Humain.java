@@ -12,5 +12,10 @@ public abstract class Humain {
 	public String toString() {
 		return "Nom:"+nom+ " \nPrenom:"+prenom+ " \nAge:"+age;
 	}
-	
+	public void manger() {
+		System.out.println(nom + " " + prenom + " mange");
+	}
+	public void boire() {
+		System.out.println(nom + " " + prenom + "boit");
+	}
 }
