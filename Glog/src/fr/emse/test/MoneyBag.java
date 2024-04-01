@@ -23,4 +23,13 @@ public class MoneyBag {
 	}
 	}
 	}
+	public boolean equals(MoneyBag mb) {
+		if(mb==null)return false;
+		if(fMonies.size()!=mb.fMonies.size()) return false;
+		for(int i=0; i< fMonies.size();i++){
+			if(!fMonies.get(i).equals(mb.fMonies.get(i)))
+				return false;
+		}
+		return true;
+	}
 }
